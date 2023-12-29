@@ -240,21 +240,21 @@ const OrderOnline = () => {
             </div>
             <div className="nav-between">
                 <ul>
-                    <li><a href="">Specials</a></li>
-                    <li><a href="">Entrees</a></li>
-                    <li><a href="">Appetizers</a></li>
-                    <li><a href="">Desserts</a></li>
+                    <li><a href="#special">Specials</a></li>
+                    <li><a href="#entrees">Entrees</a></li>
+                    <li><a href="#appetizers">Appetizers</a></li>
+                    <li><a href="#desert">Desserts</a></li>
                 </ul>
             </div>
 
             <div className="cards-category">
-                <h2 className="headingg">Spacials</h2>
+                <h2 className="headingg" id="special">Spacials</h2>
                 <BlogList special={special.filter((category) => category.unic === 'special')} />
-                <h2 className="headingg">Entrees</h2>
+                <h2 className="headingg" id="entrees">Entrees</h2>
                 <BlogList special={special.filter((category) => category.unic === 'entrees')} />
-                <h2 className="headingg">Appetizers</h2>
+                <h2 className="headingg" id="appetizers">Appetizers</h2>
                 <BlogList special={special.filter((category) => category.unic === 'appetizers')} />
-                <h2 className="headingg">Desert</h2>
+                <h2 className="headingg" id="desert">Desert</h2>
                 <BlogList special={special.filter((category) => category.unic === 'desert')} />
             </div>
             <Footerr />

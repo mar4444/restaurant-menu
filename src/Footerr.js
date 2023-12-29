@@ -1,4 +1,5 @@
 import myLogo from './images/logo.jpg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,18 +11,18 @@ const Footer = () => {
                 </div>
                 <div className="footer-category">
                     <ul className='nav-footer'>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Online Reservation</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="#">About</Link></li>
+                        <li><Link to="/booking">Online Reservation</Link></li>
+                        <li><Link to="/OrderOnline">Menu</Link></li>
                     </ul>
 
                     <div className="contact">
                         <h3>Contact</h3>
-                        <p>21 S Racine Ave, Chicago, IL 60607</p>
-                        <p>United States</p>
+                        <p>Kigali city, Kicukiro, kk 155</p>
+                        <p>Rwanda</p>
                         <p>+250784405041</p>
-                        <p>contact@littlelemon</p>
+                        <p>manirumva@gmail.com</p>
                     </div>
 
                     <div className="socials">
@@ -36,7 +37,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="last">
-                <p>This is final project for Meta Front-End certification. Created by Sue Brechko. See you on</p>
+                <p>This is final project. Created by Imanirumva Martin. See you on</p>
                 <h3><a href="www.github.com">GitHub</a></h3>
             </div>
         </div>

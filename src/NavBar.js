@@ -38,7 +38,7 @@ const NavBar = () => {
                 </div>
                     <ul className={menu_class}>
                         <li className={islinkMenuclicked} onClick={updateList}><Link to="/">HOME</Link></li>
-                        <li className={islinkMenuclicked} onClick={updateList}><a href="#">ABOUT</a></li>
+                        <li className={islinkMenuclicked} onClick={updateList}><a href="#about">ABOUT</a></li>
                         <li className={islinkMenuclicked} onClick={updateList}><Link to="/booking">ONLINE RESERVATION</Link></li>
                         <li className={islinkMenuclicked} onClick={updateList}><Link to="/OrderOnline">MENU</Link></li>
                     </ul>
